@@ -4,3 +4,6 @@ const navLinks = document.getElementById('nav-links');
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
+
+
+

@@ -63,7 +63,7 @@ html{
     color: var(--headingclr2);
     /* color: white; */
     padding: 1rem 2rem;
-    font-size: 2rem;
+    font-size: 2.3rem;
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -156,10 +156,11 @@ html{
 .prev, .next {
     position: absolute;
     top: 50%;
+    font-size: 3rem;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 10px;
+    padding: 4px;
     cursor: pointer;
 }
 
@@ -720,7 +721,7 @@ transform: translateY(-25px);
 .cont3 p {
     margin: 1rem 0;
     font-size: 1.6rem;
-    color: #d1d1d1;
+    color: white;
     padding-left: 3rem;
     line-height: 1.6;
     position: relative;
@@ -753,10 +754,10 @@ transform: translateY(-25px);
 
 .huda{
     font-size: 1.5rem;
-    text-align: center;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: -30px;
     color: black;
-    background-color:#d4a90e;
-    font-weight: bold;
     bottom: 0;
 }
 
@@ -886,4 +887,10 @@ a:hover {
     width: 99%;
     margin: 0 auto;
     margin-top: -80px;
+}
+
+.r12 {
+    display: flex;
+    gap: 10px;
+    width: 48%;
 }
