@@ -64,9 +64,3 @@ dots.forEach((dot, index) => {
         showSlide(currentSlide);
     });
 });
-
-
-// function togglePopup() {
-//     const popup = document.getElementById("popup");
-//     popup.style.display = popup.style.display === "flex" ? "none" : "flex";
-// }
