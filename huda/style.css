@@ -523,6 +523,8 @@ transform: translateY(-25px);
 .nav-btn1 {
     cursor: pointer;
     font-size: 24px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     padding: 10px;
     background-color: #333;
@@ -751,20 +753,117 @@ transform: translateY(-25px);
     color: #58a4b0;
     transition: color 0.3s;
 }
+.cont3 p:hover {
+    color: #58a4b0;
+    transition: color 0.3s;
+}
 
-.huda{
-    font-size: 1.5rem;
-    text-align: right;
-    margin-right: 10px;
-    margin-top: -30px;
+/* Footer */
+footer.huda {
+    text-align: center;
+    padding: 8px;
+    background: #2b1b0f;
+    font-size: 1.5rem; 
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Footer Hover */
+footer.huda:hover {
+    background: #3b2617;
+}
+
+/* Popup container */
+.popup {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Footer hover → popup show */
+footer.huda:hover #popup {
+    display: flex;
+}
+
+/* Popup box styling */
+.popup-content {
+    width: 410px;
+    height: auto;
+    padding: 20px;
+    border-radius: 18px;
+    /* Blur Glass effect */
+    background: rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    text-align: center;
+    justify-content: center;
+    animation: slideUp 0.35s ease;
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+}
+
+/* Profile Image */
+.profile-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #d47a1f;
+    margin-bottom: 10px;
+}
+
+/* Name */
+.name-heading {
+    color: #3b240b;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Contact Info */
+.info strong,p {
     color: black;
-    bottom: 0;
+    text-decoration: none;
+    font-weight: 600;
+}
+.info a {
+    color: #b94000;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-.huda a{
-    color: red;
-    text-decoration: none;
+/* Social buttons */
+.social-btns {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-around;
 }
+
+.btn {
+    padding: 8px 14px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    width: 80px;
+    text-align: center;
+}
+
+/* Button Colors */
+/* .whatsapp { background: #25D366; }
+.instagram { background: #E4405F; }
+.call { background: #FF8C00; } */
+
+
 
 .man {
     width: 50%;
